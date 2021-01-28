@@ -13,6 +13,8 @@ import Profile from './containers/Profile';
 import { IconButton } from 'react-native-paper';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import MyCustomCarousel from './containers/MyCustomCarousel';
+import CarouselSlide from './containers/CarouselSlide';
 
 const Stack = createStackNavigator();
 const Tab = createMaterialTopTabNavigator();

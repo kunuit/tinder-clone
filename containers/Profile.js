@@ -2,6 +2,7 @@ import React from 'react';
 import { Dimensions, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { Avatar, Badge, Button, Card, IconButton } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/Ionicons';
+import CarouselSlide from './CarouselSlide';
 
 const Profile = () => {
   return (
@@ -76,6 +77,40 @@ const Profile = () => {
             </View>
           </Card>
         </View>
+      </View>
+
+      <View
+        style={{
+          // display: 'flex',
+          marginTop: -Dimensions.get('window').height / 15,
+          height: Dimensions.get('window').height / 5,
+        }}>
+        <CarouselSlide />
+      </View>
+
+      <View
+        style={{
+          alignItems: 'center',
+          marginTop: Dimensions.get('window').height / 15,
+        }}>
+        <Button
+          style={{
+            backgroundColor: '#fff',
+            borderRadius: 50,
+            shadowColor: '#000',
+            shadowOffset: {
+              width: 0,
+              height: 3,
+            },
+            shadowOpacity: 0.27,
+            shadowRadius: 4.65,
+
+            elevation: 6,
+          }}
+          color='red'
+          onPress={() => console.log('Pressed')}>
+          <Text>Tinder Plus của tôi</Text>
+        </Button>
       </View>
     </View>
   );
